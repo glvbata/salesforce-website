@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get your free Salesforce audit. Contact our expert consultants for a 30-minute consultation with actionable insights.">
+  <title>Contact Us - Get Your Free Salesforce Audit | [Company Name]</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="/" class="logo" aria-label="Home">
+        <span class="logo-text">[Company Name]</span>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/case-studies.html">Case Studies</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact.html" class="cta-button">Get Free Audit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="contact-hero section">
+      <div class="container">
+        <div class="contact-header">
+          <h1>Get Your Free Salesforce Audit</h1>
+          <p class="hero-subtitle">30-minute consultation • No obligation • Actionable insights</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form" action="/api/contact" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  aria-required="true"
+                  placeholder="John Doe"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  aria-required="true"
+                  placeholder="john@company.com"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company Name *</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  name="company" 
+                  required 
+                  aria-required="true"
+                  placeholder="Acme Corp"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  placeholder="+1 (234) 567-890"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="company-size">Company Size *</label>
+                <select id="company-size" name="company-size" required aria-required="true">
+                  <option value="">Select company size</option>
+                  <option value="1-10">1-10 employees</option>
+                  <option value="11-50">11-50 employees</option>
+                  <option value="51-200">51-200 employees</option>
+                  <option value="201-500">201-500 employees</option>
+                  <option value="500+">500+ employees</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="salesforce-usage">Current Salesforce Usage *</label>
+                <select id="salesforce-usage" name="salesforce-usage" required aria-required="true">
+                  <option value="">Select your situation</option>
+                  <option value="not-using">Not using Salesforce yet</option>
+                  <option value="planning">Planning to implement</option>
+                  <option value="using-basic">Using basic features</option>
+                  <option value="using-advanced">Using advanced features</option>
+                  <option value="need-optimization">Need optimization</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell us about your needs *</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required 
+                  aria-required="true"
+                  placeholder="What challenges are you facing with Salesforce? What are your goals?"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" value="yes">
+                  <span>Send me Salesforce tips and insights</span>
+                </label>
+              </div>
+
+              <button type="submit" class="cta-button-large">Get My Free Audit</button>
+
+              <p class="form-note">We'll respond within 24 hours. Your information is kept confidential.</p>
+            </form>
+
+            <!-- Success Message (hidden by default) -->
+            <div id="success-message" class="success-message" style="display: none;">
+              <h3>✓ Thank you for reaching out!</h3>
+              <p>We've received your request and will contact you within 24 hours to schedule your free Salesforce audit.</p>
+            </div>
+
+            <!-- Error Message (hidden by default) -->
+            <div id="error-message" class="error-message" style="display: none;">
+              <h3>⚠ Something went wrong</h3>
+              <p>Please try again or email us directly at <a href="mailto:hello@example.com">hello@example.com</a></p>
+            </div>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <h3>Other Ways to Reach Us</h3>
+              
+              <div class="contact-method">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:hello@example.com">hello@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">💼</div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a href="https://linkedin.com/company/[your-company]" target="_blank" rel="noopener">Connect with us</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <h3>What to Expect</h3>
+              <ul class="expectation-list">
+                <li>✓ 30-minute consultation call</li>
+                <li>✓ Review of your current setup</li>
+                <li>✓ Identification of quick wins</li>
+                <li>✓ Actionable recommendations</li>
+                <li>✓ No obligation or pressure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">[Company Name]</h3>
+          <p>Expert Salesforce consulting services that drive real business results.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="/services.html#implementation">Implementation</a></li>
+            <li><a href="/services.html#customization">Customization</a></li>
+            <li><a href="/services.html#optimization">Optimization</a></li>
+            <li><a href="/services.html#training">Training</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="/case-studies.html">Case Studies</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://linkedin.com/company/[your-company]" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 [Company Name]. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/form.js" defer></script>
+</body>
+</html>
